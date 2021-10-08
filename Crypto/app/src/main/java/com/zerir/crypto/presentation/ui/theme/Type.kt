@@ -1,4 +1,4 @@
-package com.zerir.crypto.ui.theme
+package com.zerir.crypto.presentation.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
