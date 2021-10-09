@@ -23,6 +23,8 @@ class GetCoinDetailsUseCase @Inject constructor(
             emit(Resource.Error(message = e.localizedMessage ?: "Something went wrong"))
         } catch (e: IOException) {
             emit(Resource.Error(message = e.localizedMessage ?: "Check your connection"))
+        } catch (e: Exception){
+            emit(Resource.Error(message = e.localizedMessage ?: "Something went wrong"))
         }
     }
 
